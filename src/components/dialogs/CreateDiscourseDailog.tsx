@@ -199,7 +199,7 @@ const CreateDiscourseDialog: FC<Props> = ({ open, setOpen, data }) => {
                 <div className={`${open ? 'animate-dEnter': 'animate-dExit'} relative bg-[#141515] border border-[#212427]  rounded-2xl max-w-sm w-full mx-auto px-6 py-4 sm:py-10 gap-4`}>
                     {/* Mint Post View */}
                     {!minting && !funded && <>
-                        <Dialog.Title className="text-white text-base  font-bold tracking-wide flex items-center gap-2 w-max self-center mx-auto ">
+                        <Dialog.Title className="text-primary text-base  font-bold tracking-wide flex items-center gap-2 w-max self-center mx-auto ">
                             <FundDiscourseIcon />
 
                             Fund Discourse
@@ -208,8 +208,8 @@ const CreateDiscourseDialog: FC<Props> = ({ open, setOpen, data }) => {
                             <p className='text-[#c6c6c6] text-medium text-xs max-w-[40ch] flex-[1] '>This is initial funding of the discourse required from creator. Need to fund min 0.01 {getCurrencyName(activeChain?.id!)}</p>
                             <div className='flex flex-col items-center justify-center w-full gap-4'>
                                 <label htmlFor="amount" className='relative flex items-center'>
-                                    <p className='absolute text-white m-auto inset-y-0 left-3 h-max'></p>
-                                    <input value={amount} onChange={(e) => setAmount(e.target.value)} type="number" id='amount' className=" input-s pl-8 text-white" placeholder='Stake Amount' />
+                                    <p className='absolute text-primary m-auto inset-y-0 left-3 h-max'></p>
+                                    <input value={amount} onChange={(e) => setAmount(e.target.value)} type="number" id='amount' className=" input-s pl-8 text-primary" placeholder='Stake Amount' />
                                 </label>
                                 <button ref={buttonRef} onClick={handleFundClick} className='button-s font-semibold tracking-wide px-6 py-3  text-xs bg-[#212427] rounded-lg outline-none'>Fund &rarr;</button>
                             </div>
@@ -219,15 +219,15 @@ const CreateDiscourseDialog: FC<Props> = ({ open, setOpen, data }) => {
                     {/* Minting.. Post View */}
                     {minting &&
                         <>
-                            <Dialog.Title className="text-white text-base  font-bold tracking-wide flex items-center gap-2 w-max self-center mx-auto ">
+                            <Dialog.Title className="text-primary text-base  font-bold tracking-wide flex items-center gap-2 w-max self-center mx-auto ">
                                 <FundDiscourseIcon />
                                 Creating Discourse
                             </Dialog.Title>
                             <Dialog.Description className="flex flex-col  w-full items-center  gap-4 text-center justify-between mt-4">
                                 <p className='text-[#c6c6c6] text-medium text-xs max-w-[40ch] flex-[1] '>Approve the transaction from metamask.<br /> {amount} {getCurrencyName(activeChain?.id!)} will be funded to the discourse.</p>
                                 <div className='flex items-center justify-center gap-2'>
-                                    <UseAnimations animation={loading} size={20} strokeColor="#ffffff" className='text-white' />
-                                    <p className='text-sm text-white/50' >Please Wait...</p>
+                                    <UseAnimations animation={loading} size={20} strokeColor="#ffffff" className='text-primary' />
+                                    <p className='text-sm text-primary/50' >Please Wait...</p>
                                 </div>
                             </Dialog.Description>
                         </>
@@ -235,7 +235,7 @@ const CreateDiscourseDialog: FC<Props> = ({ open, setOpen, data }) => {
                     {/* Minted Post */}
                     {!minting && funded &&
                         <>
-                            <Dialog.Title className="text-white text-base  font-bold tracking-wide flex items-center gap-2 w-max self-center mx-auto ">
+                            <Dialog.Title className="text-primary text-base  font-bold tracking-wide flex items-center gap-2 w-max self-center mx-auto ">
                                 <DiscourseIcon />
 
                                 Discourse Created

@@ -48,7 +48,7 @@ const Layout = ({ children }: { children: any }) => {
     }
     
     return (
-        <div className="flex-col min-h-screen flex items-center relative justify-center bg-[#000000]">
+        <div className="flex-col min-h-screen flex items-center relative justify-center bg-lightBlue">
             <div className="w-full max-w-4xl flex">
                 {children}
             </div>
@@ -74,7 +74,7 @@ const Layout = ({ children }: { children: any }) => {
                             <Warning2 size='24' color="#6c6c6c" />
                         </div>
                         <div className="flex flex-col ">
-                            <p className="text-white font-Lexend text-sm">Still in development</p>
+                            <p className="text-primary font-Lexend text-sm">Still in development</p>
                             <p className="text-[#c6c6c6] font-Lexend text-[10px] flex w-full justify-between gap-2 items-center">Might be buggy <span onClick={handleClose} className="cursor-pointer font-regular text-red-400 text-[10px] mt-1">close</span>  </p>
                         </div>
                     </div>

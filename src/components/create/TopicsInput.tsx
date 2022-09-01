@@ -42,7 +42,7 @@ const TopicsInput: FC<Props> = ({ topics, addTopic, removeTopic }) => {
             {
                 topics.map((topic, index) => (
                     <div key={index} className="w-full bg-[#0b0b0b] rounded-lg ring-[1px] ring-[#212427] py-2 px-4 flex items-center gap-2 justify-between h-full" >
-                        <p className="text-[12px] text-white line-clamp-2 font-Lexend">{topic}</p>
+                        <p className="text-[12px] text-primary line-clamp-2 font-Lexend">{topic}</p>
                         <button onClick={() => removeTopic(topic)} className="button-i">
                             <CloseCircle size={20} color="#5f5f5f" />
                         </button>
@@ -50,7 +50,7 @@ const TopicsInput: FC<Props> = ({ topics, addTopic, removeTopic }) => {
                 ))
             }
             <div className="w-full flex relative" >
-                <input value={topic} onKeyDown={handleKeyDown} onChange={(e) => setTopic(e.target.value)} className="input-s text-white/80 text-xs w-full py-3" type="text" placeholder="another sub-topic" />
+                <input value={topic} onKeyDown={handleKeyDown} onChange={(e) => setTopic(e.target.value)} className="input-s text-secondary w-full py-3" type="text" placeholder="another sub-topic" />
                 { topic && <button onClick={() => handleAddTopic(topic)} className="button-i absolute inset-y-0  right-1 h-max my-auto">
                     <Add size={20} color="#5f5f5f" />
                 </button>}

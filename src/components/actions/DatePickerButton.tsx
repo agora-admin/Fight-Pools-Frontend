@@ -453,7 +453,7 @@ const DatePicker = ({ endTS, dates, setDates }: { endTS: number , dates: Array<a
                                 // onMouseDown={event => event.preventDefault()}
                                 className={`cursor-pointer text-center text-sm leading-none rounded-lg leading-loose transition ease-in-out duration-100 
                                                 ${isSelectedDate(dayNumber)
-                                        ? "bg-blue-500 text-white"
+                                        ? "bg-blue-500 text-primary"
                                         : disableDate(dayNumber) ? "text-[#c6c6c6]/30" : "text-[#c6c6c6] hover:bg-blue-200/30"
                                     }`}
                             >

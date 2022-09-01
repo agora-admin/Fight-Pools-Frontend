@@ -84,7 +84,7 @@ const LogoutPop = () => {
         <Popover className="relative">
             {({ open }) => (
                 <>
-                    <Popover.Button className={`t-all outline-none text-white text-xs ${open ? 'bg-[#212427]' : ''} hover:bg-white/10 group rounded-xl font-Lexend px-4 py-2 flex items-center gap-2`}>
+                    <Popover.Button className={`t-all outline-none text-primary text-xs ${open ? 'bg-[#212427]' : ''} hover:bg-white/10 group rounded-xl font-Lexend px-4 py-2 flex items-center gap-2`}>
                         <div className='hidden relative sm:flex items-center  w-6 h-6 ' >
                             <div className={`absolute flex bottom-0 right-0 inset-y-0 h-max my-auto  ${open ? '-translate-x-[25%]' : '-translate-x-[70%]'} group-hover:-translate-x-[25%] rounded-xl t-all`}>
                                 <IChainTag chainId={activeChain?.id!} />
@@ -92,8 +92,8 @@ const LogoutPop = () => {
                             <img className="w-6 h-6 z-10 object-cover rounded-lg object-center" src={`https://avatar.tobi.sh/${walletAddress}`} alt="" />
                         </div>
                         <div className="flex flex-col justify-center items-start">
-                            <p className='text-white text-[10px] font-Lexend sm:text-xs'>{shortAddress(walletAddress === "" ? '' : walletAddress)}</p>
-                            <p className='text-[#c6c6c6] text-[8px] font-Lexend sm:text-[10px]'>{getBalance()}</p>
+                            <p className='text-primary text-[10px] font-Lexend sm:text-xs'>{shortAddress(walletAddress === "" ? '' : walletAddress)}</p>
+                            <p className='text-secondary text-[8px] font-Lexend sm:text-[10px]'>{getBalance()}</p>
                         </div>
                     </Popover.Button>
                     {/* <Transition

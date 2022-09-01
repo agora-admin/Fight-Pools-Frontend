@@ -51,7 +51,7 @@ const Chat = ({ open, setOpen, speakers } : { open: boolean, setOpen: Dispatch<S
         <div className=" absolute inset-y-0 my-10 md:right-3   lg:my-0 md:mx-0 mx-auto lg:mx-0 lg:relative w-[90vw] lg:w-full md:max-w-xs flex flex-col bg-card p-4 rounded-xl">
 
             <div className="w-full flex justify-between items-center pb-4">
-                <p className="text-sm text-white font-Lexend">Chat </p>
+                <p className="text-sm text-primary font-Lexend">Chat </p>
                 <div className='flex gap-2 items-center'>
                 <p className="text-xs flex items-center gap-1 flex-row-reverse text-[#c6c6c6] font-Lexend">{peers.length} <Profile2User size="16" color="#c6c6c6" /> </p>
                 <button onClick={handleCloseClick} className='button-i lg:hidden'> <CloseSquare size='20' color="#c6c6c6" /> </button>
@@ -72,7 +72,7 @@ const Chat = ({ open, setOpen, speakers } : { open: boolean, setOpen: Dispatch<S
                                             {shortAddress(message.senderName)}</p>
                                         <p className="text-[#797979] font-Lexend text-[10px]">{getAgoT((new Date(message.time)).toISOString())}</p>
                                     </div>
-                                    <p key={message.id} className="text-xs font-Lexend text-white"><span className="text-[#c6c6c6]"></span> {message.message}</p>
+                                    <p key={message.id} className="text-xs font-Lexend text-primary"><span className="text-[#c6c6c6]"></span> {message.message}</p>
                                 </div>
                             </>
                         ))

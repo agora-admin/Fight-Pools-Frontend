@@ -5,7 +5,7 @@ const TokenErrorCard = () => {
     return (
         <div className="flex flex-col gap-4 mt-10 grow mx-20 ">
             <div className="relative bg-card max-w-md mx-auto min-h-[150px] w-full flex flex-col p-8 rounded-2xl">
-                <h3 className="text-white/70 text-xl font-semibold font-Lexend">Error getting data!</h3>
+                <h3 className="text-primary/70 text-xl font-semibold font-Lexend">Error getting data!</h3>
                 {<p className="text-[#c6c6c6] text-xs w-[50%] my-4">Try joining again from discourse page!</p>}
                 <button onClick={() => route.back()} className="text-gradient w-max text-sm font-Lexend outline-none border-none">&larr; go back</button>
 

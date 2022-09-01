@@ -8,8 +8,8 @@ const FundingInput: FC<Props> = ({fundingPeriod, setFundingPeriod}) => {
     return (
         <div className="flex flex-col sm:flex-row w-full gap-4"> 
             <div className="flex flex-col max-w-[200px] w-full">
-                <input value={fundingPeriod === 0 ? "s": fundingPeriod} onChange={(e) => setFundingPeriod(parseInt(e.target.value))} className="input-s text-white/80 h-max text-xs max-w-[200px] py-3" type="number" placeholder="Seconds" />
-                { fundingPeriod >= 24*60*60 && <span className="text-white/30 text-[10px] px-2 py-1 font-Lexend">{getPeriodFromSeconds(fundingPeriod)}</span>}
+                <input value={fundingPeriod === 0 ? "s": fundingPeriod} onChange={(e) => setFundingPeriod(parseInt(e.target.value))} className="input-s text-secondary h-max max-w-[200px] py-3" type="number" placeholder="Seconds" />
+                { fundingPeriod >= 24*60*60 && <span className="text-primary/30 text-[10px] px-2 py-1 font-Lexend">{getPeriodFromSeconds(fundingPeriod)}</span>}
                 
             </div>
             <div className="flex flex-col">
@@ -20,16 +20,16 @@ const FundingInput: FC<Props> = ({fundingPeriod, setFundingPeriod}) => {
             </p>
             <div className="flex items-center gap-2 mt-2">
                     <button onClick={() => setFundingPeriod(7*24*60*60)} className="button-o group px-2">
-                        <p className="text-[10px] font-Lexend text-[#c6c6c6] group-hover:text-white t-all w-max">7 D</p>
+                        <p className="text-[10px] font-Lexend text-[#c6c6c6] group-hover:text-primary t-all w-max">7 D</p>
                     </button>
                     <button onClick={() => setFundingPeriod(14*24*60*60)} className="button-o group px-2">
-                        <p className="text-[10px] font-Lexend text-[#c6c6c6] group-hover:text-white t-all w-max">2 W</p>
+                        <p className="text-[10px] font-Lexend text-[#c6c6c6] group-hover:text-primary t-all w-max">2 W</p>
                     </button>
                     <button onClick={() => setFundingPeriod(21*24*60*60)} className="button-o group px-2">
-                        <p className="text-[10px] font-Lexend text-[#c6c6c6] group-hover:text-white t-all w-max">3 W</p>
+                        <p className="text-[10px] font-Lexend text-[#c6c6c6] group-hover:text-primary t-all w-max">3 W</p>
                     </button>
                     <button onClick={() => setFundingPeriod(31*24*60*60)} className="button-o group px-2">
-                        <p className="text-[10px] font-Lexend text-[#c6c6c6] group-hover:text-white t-all w-max">1 M</p>
+                        <p className="text-[10px] font-Lexend text-[#c6c6c6] group-hover:text-primary t-all w-max">1 M</p>
                     </button>
                 </div>
             </div>

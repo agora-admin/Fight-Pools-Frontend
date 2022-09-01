@@ -9,10 +9,18 @@ module.exports = {
         'md2' : '900px'
       },
       fontFamily: {
-        'montserrat': ['Montserrat', 'sans-serif'],
+        'gilroy': ['Gilroy-Bold', 'sans-serif'],
+        'gilroy-heavy': ['Gilroy-Heavy', 'sans-serif'],
+        'space-grotesk': ['Space Grotesk', 'sans-serif'],
         'Lexend': ['Lexend', 'sans-serif'],
       },
-
+      colors: {
+        lightBlue: '#EBF7FF',
+        primary: '#000E17',
+        secondary: '#526B7A',
+        disabled: '#C1D4E0',
+        orange: '#FF2E40',
+      },
       keyframes: {
         load: {
           '0%': {

@@ -130,8 +130,8 @@ const TimePickerDialog = ({ open, setOpen, index, dates, slots, setSlots }:
                 <div className={`${open ? 'animate-dEnter': 'animate-dExit'} relative bg-[#141515] border border-[#212427] max-h-[80vh]  rounded-2xl max-w-sm w-full mx-auto py-4 sm:py-6 gap-4 overflow-hidden`}>
                     {/* Mint Post View */}
                     {<>
-                        <Dialog.Title className="text-white/40 text-base  tracking-wide flex flex-col gap-2 w-max px-6">
-                            <p className='text-xs text-white/60 font-Lexend '>Select 3 slots for respective date</p>
+                        <Dialog.Title className="text-primary/40 text-base  tracking-wide flex flex-col gap-2 w-max px-6">
+                            <p className='text-xs text-primary/60 font-Lexend '>Select 3 slots for respective date</p>
                             <p className='text-xs font-Lexend '>{getSpanishDate(dates[index])}</p>
                         </Dialog.Title>
                         <Dialog.Description as='div' className="flex mt-2 flex-col w-full text-center justify-between flex-1 px-6 overflow-y-auto max-h-[75vh] ">
@@ -140,7 +140,7 @@ const TimePickerDialog = ({ open, setOpen, index, dates, slots, setSlots }:
                                     getSlotData().map((h,i) => (
                                         <div onClick={() => handleClick(h)} className={` w-[50px] h-[50px] rounded-lg flex flex-col items-start justify-between p-2
                                             ${selectedSlots.includes(h) ? 'bg-blue-500 cursor-pointer' : selectedSlots.length >= 3 ? 'bg-[#212427] opacity-30 cursor-default' : 'bg-[#212427] hover:bg-blue-200/30 cursor-pointer'}`} key={i}>
-                                            <p className={`text-xs font-medium ${selectedSlots.includes(h) ? 'text-white' : 'text-[#c6c6c6]'}`}>{getDisplaySlot(h)}</p>
+                                            <p className={`text-xs font-medium ${selectedSlots.includes(h) ? 'text-primary' : 'text-[#c6c6c6]'}`}>{getDisplaySlot(h)}</p>
                                             <p className={`text-[10px] font-Lexend font-medium ${selectedSlots.includes(h) ? 'text-[#c6c6c6]' : 'text-[#797979]'} `}>{getAMPM(h)}</p>
                                         </div>
                                     ))

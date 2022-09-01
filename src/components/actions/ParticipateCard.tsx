@@ -76,7 +76,7 @@ const ParticipateCard = ({ data }: {data : any}) => {
             </div>
 
             <div className="mt-4 flex items-center justify-between w-full bg-[#141515]/60 p-3 rounded-lg gap-1">
-                <input value={email} onChange={(e) => setEmail(e.target.value)} className=" bg-transparent text-xs font-semibold tracking-wide outline-none border-none text-white/80 grow" type="text" placeholder="Email address" />
+                <input value={email} onChange={(e) => setEmail(e.target.value)} className=" bg-transparent text-xs font-semibold tracking-wide outline-none border-none text-primary/80 grow" type="text" placeholder="Email address" />
                 <button onClick={handleParticipate} className="outline-none border-none">
                     <RightArrowGradient />
                 </button>
@@ -94,7 +94,7 @@ const ParticipateCard = ({ data }: {data : any}) => {
             </div>
 
             <div className="flex items-center justify-between w-full bg-[#141515]/60 p-3 rounded-lg gap-1">
-                <input value={email} onChange={(e) => setEmail(e.target.value)} className=" bg-transparent text-xs font-semibold tracking-wide outline-none border-none text-white/80 grow" type="text" placeholder="Email address" />
+                <input value={email} onChange={(e) => setEmail(e.target.value)} className=" bg-transparent text-xs font-semibold tracking-wide outline-none border-none text-primary/80 grow" type="text" placeholder="Email address" />
                 <button onClick={handleParticipate} className="outline-none border-none">
                     <RightArrowGradient />
                 </button>

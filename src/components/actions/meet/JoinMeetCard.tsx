@@ -275,10 +275,10 @@ const JoinMeetCard = ({ data }: { data: any }) => {
                 isPast(d.meet_date) && !isMeetHappening() && discouresEnded(data) &&
                 <div className="bg-card rounded-xl p-4 flex flex-col gap-2">
                     <div className="flex items-center gap-2">
-                        <Verify size='18' color="#ABECD6" />
-                        <p className="text-[#ABECD6] font-Lexend text-sm">Happened</p>
+                        <Verify size='18' color="#000E17" />
+                        <p className="text-primary text-sm">Happened</p>
                     </div>
-                    <p className="text-[#c6c6c6] text-[10px]">
+                    <p className="text-secondary text-[10px]">
                         Discourse completed on <b>{formatDate(new Date(d.meet_date))}</b>
                     </p>
                     {

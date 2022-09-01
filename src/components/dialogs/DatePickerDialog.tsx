@@ -65,12 +65,12 @@ const DatePickerDialog = ({ open, setOpen, endTS, slots, setSlots, dates, setDat
                 <div className={`${open ? 'animate-dEnter': 'animate-dExit'} relative bg-[#141515] border border-[#212427] max-h-[80vh]  rounded-2xl max-w-sm w-full mx-auto py-4 sm:py-6 gap-4 overflow-hidden`}>
                     {/* Mint Post View */}
                     {<>
-                        <Dialog.Title as="div" className="text-white/40 text-base w-full tracking-wide flex items-center gap-2 px-6 justify-between">
+                        <Dialog.Title as="div" className="text-primary/40 text-base w-full tracking-wide flex items-center gap-2 px-6 justify-between">
                             <div className='flex flex-col'>
-                                <p className='text-sm text-white/60 font-Lexend '>Select 3 dates</p>
+                                <p className='text-sm text-primary/60 font-Lexend '>Select 3 dates</p>
                                 <p className='text-xs font-Lexend '>Click on clock icon for time slot</p>
                             </div>
-                            { slots.length ==3 && <button onClick={handleClose} className='text-white/60 text-xs button-s'>Done</button>}
+                            { slots.length ==3 && <button onClick={handleClose} className='text-primary/60 text-xs button-s'>Done</button>}
                         </Dialog.Title>
                         <Dialog.Description as='div' className="flex flex-col w-full text-center justify-between flex-1 px-6 overflow-y-auto max-h-[70vh] ">
                             <div className='flex flex-col w-full items-center'>
@@ -83,7 +83,7 @@ const DatePickerDialog = ({ open, setOpen, endTS, slots, setSlots, dates, setDat
                                         <div key={index} className='w-full flex items-center p-2 border justify-between border-[#212427] rounded-lg'>
                                             <div className='flex items-center'>
                                             <p className='text-xs text-[#797979] p-1 mr-2'>{index+1}</p>
-                                            <p className='text-white/60 text-sm font-medium font-Lexend'>{getSpanishDate(date)}</p>
+                                            <p className='text-primary/60 text-sm font-medium font-Lexend'>{getSpanishDate(date)}</p>
                                             </div>
                                             <div className='flex items-center'>
                                                 <button onClick={() => setOpenTPicker(index, !openTimePicker[index])} className='button-i'>

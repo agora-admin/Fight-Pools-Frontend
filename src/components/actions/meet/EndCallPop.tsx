@@ -8,7 +8,7 @@ const EndCallPop = ({rejectEndCall, endRoom} : {rejectEndCall: () => void, endRo
     return (
         <Popover className="relative">
                 <>
-                    <Popover.Button as="div" className={`t-all text-white/30 rounded-xl font-Lexend text-xs  px-4 py-2 flex items-center gap-2`}>End Call? </Popover.Button>
+                    <Popover.Button as="div" className={`t-all text-primary/30 rounded-xl font-Lexend text-xs  px-4 py-2 flex items-center gap-2`}>End Call? </Popover.Button>
                     <Popover.Panel static className="absolute z-10 right-0 bg-card bg-[#141515] p-4 rounded-xl backdrop-blur-lg max-w-[200px] w-[400px]">
                         <div className="flex flex-col gap-2 ">
                             <p className="text-xs font-Lexend text-[#c6c6c6]">Other speaker requested to end the call.</p>

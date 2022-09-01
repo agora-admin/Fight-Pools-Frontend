@@ -35,7 +35,7 @@ const TopBar = () => {
 			}
 
 			{!loggedIn && <div className='cursor-default flex items-center justify-end gap-2 text-[#616162] text-sm font-semibold w-[20%]'>
-				{/* <button onClick={handleConnectWallet} className='text-white font-bold sm:text-xs hover:text-gradient'>Connect Wallet</button> */}
+				{/* <button onClick={handleConnectWallet} className='text-primary font-bold sm:text-xs hover:text-gradient'>Connect Wallet</button> */}
 				<WalletOptionsPopUp />
 			</div>}
 			{/* {!user.isLoggedIn && <div className='cursor-default flex sm:hidden items-center justify-end gap-2 text-[#616162] text-sm font-semibold w-[20%]'>

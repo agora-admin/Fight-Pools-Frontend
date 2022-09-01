@@ -250,7 +250,7 @@ const Meet = ({ dData }: { dData: any }) => {
                         {/* <div className="flex items-center gap-2">
                                             <p className="text-xs flex items-center gap-1 flex-row-reverse text-[#c6c6c6] font-Lexend">{getSpeakers().length} <Microphone2 size="16" color="#c6c6c6" /> </p>
                                             <div className="w-[2px] h-[12px] bg-[#212427]" />
-                                            <p className="text-sm text-white font-Lexend">Demo Meet </p>
+                                            <p className="text-sm text-primary font-Lexend">Demo Meet </p>
                                         </div> */}
                         <div className="flex items-center gap-2 self-center">
                             {getLocalPeer()?.roleName === "speaker" &&
@@ -301,7 +301,7 @@ const VideoTile = ({ peer }: { peer: any }) => {
     return (
         <div className="flex relative rounded-xl overflow-clip bg-[#212427] items-center justify-center">
             <video className="min-w-[30vw] sm:min-w-[480px] aspect-[4/3] object-cover" ref={videoRef} autoPlay muted playsInline ></video>
-            <div className="absolute bottom-2 left-2 bg-card border-none z-10 text-white px-2 py-1 flex items-center gap-2 rounded-md overflow-clip">
+            <div className="absolute bottom-2 left-2 bg-card border-none z-10 text-primary px-2 py-1 flex items-center gap-2 rounded-md overflow-clip">
                 <p className="text-[10px] sm:text-xs font-Lexend">{shortAddress(peer.customerUserId)}</p>
                 <p className="text-[10px] sm:text-xs text-[#c6c6c6] font-Lexend">{peer.roleName}</p>
             </div>

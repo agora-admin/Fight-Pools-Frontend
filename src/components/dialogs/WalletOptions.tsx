@@ -104,7 +104,7 @@ const WalletOptionsPopUp = () => {
         <Popover className="relative">
             {({ open }) => (
                 <>
-                    <Popover.Button className={`t-all outline-none text-white text-xs ${open ? 'bg-[#212427]' : ''} hover:bg-white/10 rounded-xl font-Lexend px-4 py-2 flex items-center gap-2`}>
+                    <Popover.Button className={`t-all outline-none text-primary text-xs ${open ? 'bg-[#212427]' : ''} hover:bg-white/10 rounded-xl font-Lexend px-4 py-2 flex items-center gap-2`}>
                         <Wallet1 size={20} />
                         <p className="hidden sm:block">{isConnecting ? 'Connecting..' : 'Connect'}</p>
                         { !isConnecting && <ArrowRight2 className={`hidden sm:block transform t-all ${open ? 'rotate-90 ' : ' rotate-0 '}`} size='16' color="#c6c6c6" />}

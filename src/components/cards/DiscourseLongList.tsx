@@ -25,24 +25,24 @@ const DiscourseLongList = ({ state, data }: { state: number, data: any }) => {
             {/* avatar */}
             <div className="flex items-center gap-1">
                 <div className='flex items-center w-16 h-8 relative'>
-                    <div className='flex items-center w-8 h-8 rounded-xl ring-[3px] ring-[#141515] overflow-clip'>
+                    <div className='flex items-center w-8 h-8 rounded-xl ring-[3px] ring-[#CCEBFF] overflow-clip'>
                         {/* TODO: add twitter fetch avatar */}
                         <img className="scale-105 w-8 h-8 object-cover rounded-xl object-center" src={data.speakers[0]?.image_url!} alt="" />
                     </div>
-                    <div className='flex items-center absolute left-[35%] w-8 h-8 rounded-xl ring-[3px] ring-[#141515] overflow-clip'>
+                    <div className='flex items-center absolute left-[35%] w-8 h-8 rounded-xl ring-[3px] ring-[#CCEBFF] overflow-clip'>
                         <img className="scale-105 w-8 h-8 object-cover rounded-xl object-center" src={data.speakers[1]?.image_url!} alt="" />
                     </div>
                 </div>
                 <div className='flex flex-col'>
-                    <h4 className='text-[#c6c6c6] text-xs tracking-wide font-medium max-w-[14ch] line-clamp-1'>{data.speakers[0]?.name}</h4>
-                    <h4 className='text-[#c6c6c6] text-xs tracking-wide font-medium max-w-[14ch] line-clamp-1'>{data.speakers[1]?.name}</h4>
+                    <h4 className='text-primary text-xs tracking-wide font-medium max-w-[14ch] line-clamp-1'>{data.speakers[0]?.name}</h4>
+                    <h4 className='text-primary text-xs tracking-wide font-medium max-w-[14ch] line-clamp-1'>{data.speakers[1]?.name}</h4>
                 </div>
             </div>
             <div className="w-full h-1"></div>
             {/* title */}
-            <h3 className='text-white text-sm font-semibold line-clamp-2'>{data.title}</h3>
+            <h3 className='text-primary text-sm font-semibold line-clamp-2'>{data.title}</h3>
             {/* divider */}
-            <div className='w-full mx-1 h-[1px] mt-1 bg-[#303030] flex rounded-xl' />
+            <div className='w-full mx-1 h-[1px] mt-1 bg-[#CCEBFF] flex rounded-xl' />
 
             <div className="flex w-full justify-between items-center">
                 <div className='flex items-center gap-4 flex-1 justify-between min-h-[36px]'>
@@ -50,7 +50,7 @@ const DiscourseLongList = ({ state, data }: { state: number, data: any }) => {
                 </div>
                 <div className="flex items-center justify-end gap-2 flex-1">
                     <SChainTag chainId={data.chainId} />
-                    <p className='text-[#68D391] font-bold text-xs'>{getFundTotal(data.funds)} {getCurrencyName(data.chainId)}</p>
+                    <p className='text-secondary font-bold text-xs'>{getFundTotal(data.funds)} {getCurrencyName(data.chainId)}</p>
                 </div>
             </div>
         </div>

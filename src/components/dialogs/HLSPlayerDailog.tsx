@@ -25,7 +25,7 @@ const HLSPlayerDailog = ({ open, setOpen, data }: { open: boolean, setOpen: Disp
                         <Dialog.Title className="w-full pt-2 flex justify-between px-4">
                             <div className='flex items-center gap-2'>
                                 <Video size={20} color="#fff" />
-                                <p className='text-xs text-white'>{(data?.id)}</p>
+                                <p className='text-xs text-primary'>{(data?.id)}</p>
                             </div>
                             <button onClick={() => handleClose()} className='button-i'>
                                 <CloseCircle size={20} color="#fff" />

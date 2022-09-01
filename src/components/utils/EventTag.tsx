@@ -18,8 +18,7 @@ const EventTag: FC<Props> = ({irl = false}) => {
 
     return (
         <div className="flex items-center bg-[#6499FF]/20 rounded-lg px-2 py-1 transition-all">
-            <Wifi size={16} color="#6499FF" />
-            <p className="text-[10px] font-medium text-[#6499FF] font-Lexend ml-2 mr-1">Virtual</p>
+            <p className="text-[10px] font-medium text-[#6499FF] font-Lexend ml-2 mr-1">MMA</p>
     </div>
     )
 }
