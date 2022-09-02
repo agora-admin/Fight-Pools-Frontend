@@ -25,7 +25,7 @@ const HeroCard = () => {
             } else {
                 addToast({
                     title: "Chain not supported",
-                    body: "Discourses only supports 'Polygon' chain. Please use correct chain",
+                    body: "FightPools only supports 'Polygon' chain. Please use correct chain",
                     type: ToastTypes.error,
                     id: uuid(),
                     duration: 6000
@@ -52,7 +52,7 @@ const HeroCard = () => {
                         <Add size={16} color="#000E17" />
                         <p className="text-xs text-primary">Create New Fight Pool</p>
                     </button>
-                    <Link href="https://testnet.discourses.agorasquare.io" passHref >
+                    <Link href="/" passHref >
                         <a target="_blank" className="button-t flex sm:hidden items-center gap-2 w-max p-2 ">
                             <p className="text-xs text-[#1FA2FF]">Explore testnet</p>
                             <ArrowNE color="#1FA2FF" />
@@ -68,7 +68,7 @@ const HeroCard = () => {
                     <ChainIcon chainId={137} />
                     {<p className="text-[10px] text-[#7B3FE4] font-bold">Polygon Mainnet</p>}
                 </div>
-                <Link href="https://testnet.discourses.agorasquare.io" passHref>
+                <Link href="/discourses" passHref>
                     <button className="button-t flex items-center gap-2 w-max p-0 mt-4">
                         <p className="text-xs text-[#1FA2FF] font-Lexend ">Explore testnet</p>
                         <ArrowNE color="#1FA2FF" />

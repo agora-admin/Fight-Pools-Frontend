@@ -5,7 +5,7 @@ const SEOHome = () => {
             <meta name="description" content="Crowdfund thought leaders to engage in dialogue to inform governance, deliberation, and knowledge discovery." />
             <meta property="og:url" content="https://discourses.agorasquare.io/" />
             <meta property="og:type" content="website" />
-            <meta property="og:title" content="Discourses by Agora Square" />
+            <meta property="og:title" content="Fight Pools by FIGHT SQUARE" />
             <meta property="og:description" content="Crowdfund thought leaders to engage in dialogue to inform governance, deliberation, and knowledge discovery." />
             <meta property="og:image" content="https://discourses.agorasquare.io/og_s.png" />
 
