@@ -15,15 +15,15 @@ const cardContent = [
 
 const Features = () => {
   return (
-    <div className="flex flex-col justify-start items-center bg-lightBlue pt-20">
-      <h1 className="font-gilroy-heavy text-[#101D26] text-3xl">
+    <div className="flex flex-col justify-start items-center bg-lightBlue pt-10 sm:pt-20">
+      <h1 className="font-gilroy-heavy text-[#101D26] text-2xl sm:text-3xl">
         MORE POWER TO
       </h1>
-      <h1 className="font-gilroy-heavy text-orange text-3xl">
+      <h1 className="font-gilroy-heavy text-orange text-2xl sm:text-3xl">
         FIGHTERS & FANS
       </h1>
 
-      <div className="grid grid-cols-1 gap-12 mt-14 sm: grid-col-3">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 md:gap-12 mt-10 sm:mt-14">
         {Array(cardImages.length)
           .fill(0)
           .map((_, i) => (
@@ -47,7 +47,7 @@ interface FeatureCardProps {
 
 const FeatureCard: FC<FeatureCardProps> = ({ imageUrl, content, heading }) => {
   return (
-    <div className="flex flex-col gap-1 items-center bg-lightBlue rounded-[32px] shadow-lg h-[400px] w-[300px] border-4 border-[#E0F2FF]">
+    <div className="flex flex-col gap-1 items-center bg-lightBlue rounded-[32px] shadow-lg h-[350px] sm:h-[400px] w-[300px] border-4 border-[#E0F2FF]">
       <div className="h-[80%] flex justify-center items-center">
         <img src={`/${imageUrl}`} width={100} height={100} className="h-[70%] w-[70%]" alt="cardImage" />
       </div>

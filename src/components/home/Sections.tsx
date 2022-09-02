@@ -13,7 +13,7 @@ const cardSecondHeading = [
 
 const Sections = () => {
   return (
-    <div className="bg-lightBlue px-48">
+    <div className="bg-lightBlue md2:px-0 lg:px-48">
       <Section
         imageUrl={cardImages[0]}
         firstHeading={cardFirstHeading[0]}
@@ -27,7 +27,7 @@ const Sections = () => {
         alternate={true}
       />
 
-      <div className="flex flex-col items-center mt-24">
+      <div className="flex flex-col items-center mt-12 sm:mt-24">
         <Card
           imageUrl="card1.svg"
           firstHeading="Get Early Pay-Per-View Access"
@@ -59,16 +59,12 @@ const Section: FC<SectionProps> = ({
   alternate,
 }) => {
   return (
-    <div
-      className={`flex ${
-        alternate && "flex-row-reverse"
-      } gap-[20%] justify-center items-center pt-24`}
-    >
-      <div className="flex flex-col max-w-xs">
-        <h1 className="text-primary font-gilroy-heavy text-3xl">
+    <div className={`flex flex-col-reverse ${alternate && "md2:flex-row-reverse"} md2:flex-row gap-[20%] justify-center items-center pt-8 sm:pt-16 md2:pt-24`}>
+      <div className="flex flex-col text-center mt-6 md2:mt-0 md2:text-left max-w-xs">
+        <h1 className="text-primary font-gilroy-heavy text-lg sm:text-2xl md2:text-3xl">
           {firstHeading}
         </h1>
-        <h1 className="text-orange font-gilroy-heavy text-3xl">
+        <h1 className="text-orange font-gilroy-heavy text-lg sm:text-2xl md2:text-3xl">
           {secondHeading}
         </h1>
       </div>
